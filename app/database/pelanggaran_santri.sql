@@ -31,7 +31,7 @@ CREATE TABLE `keamanan` (
   `id` int(11) NOT NULL,
   `id_keamanan` varchar(5) NOT NULL,
   `id_ketua` varchar(5) NOT NULL,
-  `nama` varchar(30) NOT NULL,
+  `nama_keamanan` varchar(30) NOT NULL,
   `alamat` varchar(25) NOT NULL,
   `no_hp` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -45,7 +45,7 @@ CREATE TABLE `keamanan` (
 CREATE TABLE `ketua` (
   `id` int(11) NOT NULL,
   `id_ketua` varchar(5) NOT NULL,
-  `nama` varchar(40) NOT NULL,
+  `nama_ketua` varchar(40) NOT NULL,
   `alamat` varchar(25) NOT NULL,
   `no_hp` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -101,7 +101,7 @@ CREATE TABLE `sanksi` (
 CREATE TABLE `santri` (
   `id_santri` int(11) NOT NULL,
   `nis` varchar(10) NOT NULL,
-  `nama` varchar(40) NOT NULL,
+  `nama_santri` varchar(40) NOT NULL,
   `alamat` varchar(80) NOT NULL,
   `jenis_kelamin` varchar(15) NOT NULL,
   `no_pelanggaran` varchar(5) NOT NULL,
